@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest; node scripts/setup.js",
     "lint": "eslint ./lib --ext .js",
     "travis": "npm run lint",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
